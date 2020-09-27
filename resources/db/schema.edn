@@ -1,0 +1,45 @@
+[
+ {:db/ident :movie/title
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "Title of the movie"}
+
+ {:db/ident :movie/year
+  :db/valueType :db.type/long
+  :db/cardinality :db.cardinality/one
+  :db/doc "The year in which the movie was released to theatres"}
+
+ {:db/ident :movie/director
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/doc "The person who directed the movie"}
+
+ {:db/ident :movie/sequel
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/doc "Name of the of the series if an to which the movie belongs"}
+ 
+ {:db/ident :movie/cast
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/doc "Reference to the list of entities repecenting actors"}
+ 
+ {:db/ident :person/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "Name of a person entity"}
+
+ {:db/ident :person/born
+  :db/valueType :db.type/instant
+  :db/cardinality :db.cardinality/one
+  :db/doc "Date of birth of a person entity"}
+
+{:db/ident :person/death
+  :db/valueType :db.type/instant
+  :db/cardinality :db.cardinality/one
+  :db/doc "Date of passage"}
+
+ {:db/ident :trivia
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/many
+  :db/doc "??"}]
