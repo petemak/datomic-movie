@@ -1,10 +1,9 @@
 # datomic-movie
-
-A Clojure library designed to ... well, that part is up to you.
+A learning project for Datomic and Datlog using schema and data from http://www.learndatalogtoday.org/
 
 ## Usage
+All queries in the _datomic-movie.core_ namespace. Queries run from _datomic-movie.coret-test_
 
-FIXME
 
 ## License
 
